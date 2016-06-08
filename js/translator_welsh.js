@@ -8,6 +8,7 @@ var translator = (function(trans) {
 		"my": "fy",
 		"little": "ychdig",
 		"friend": "ffrind"
+
 	};
 
 	trans.getTranslation = function(input) {
@@ -29,10 +30,3 @@ var translator = (function(trans) {
 	return trans;
 
 })(translator);
-
-console.log(translator.getTranslation('say'));
-console.log(translator.getTranslation('say hello'));
-console.log(translator.getTranslation('say hello to'));
-console.log(translator.getTranslation('say hello to my'));
-console.log(translator.getTranslation('say hello to my little'));
-console.log(translator.getTranslation('say hello to my little friend'));
