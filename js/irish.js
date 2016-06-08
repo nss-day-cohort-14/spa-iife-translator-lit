@@ -3,23 +3,41 @@ var translator = (function(originalWord){
 
 	var irishtrans;
 	var irishWords = {
-			"Merry Christmas": "Cristman Merry",
-			"Happy New Year": "Bhliain nua sásta",
-			"Say hello to my little friend": "rá hello mo chara beag",
-			"Bring me a beer": "Tabhair dom beoir",
+			"Say": "rá",
+			"hello to": "hello",
+			"my": "mo",
+			"little": "chara",
+			"friend": "beag",
 
 
-			}
+			};
 
-	originalWord.getTranslate = function(word){
-		irishtrans = irishWords[word];
-		console.log("test", irishtrans);
+	originalWord.getTranslation = function(word){
+		irishtrans = word;
+		translator.translate();
 		return irishtrans;
+	};
+
+	originalWord.translate = function() {
+		var words = [];
+		irishtrans = irishtrans.split(' ');
+		for (let i = 0; i < irishtrans.length; i++) {
+			for (var key in irishWords) {
+			if (irishWords[i] === key) tempArray.push(irishWords[key]);
+			}
+		}
+		irishtrans = words.join(' ');
+
+
+
 	}
 
 	return originalWord;
 
 
 
+
+
 })(translator);
 
+console.log("test2");
