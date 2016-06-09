@@ -6,11 +6,12 @@ var elButton = document.getElementById('button'),
 elButton.addEventListener('click', translate);
 
 function translate() {
-	var language = elLanguage.value;
+	var language = `get${elLanguage.value}Translation`;
 	console.log(language);
 	if (isValid() === true) {
 		translator.setInput(elInput.value);
-		elDisplay.innerHTML = translator.getWelshTranslation(translator.getInput());
+		// elDisplay.innerHTML = translator.getIrishTranslation(translator.getInput());
+		elDisplay.innerHTML = translator[language](translator.getInput());
 	}
 }
 

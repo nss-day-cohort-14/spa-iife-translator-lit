@@ -14,10 +14,10 @@ var translator = (function(trans) {
 	trans.getWelshTranslation = function(input) {
 		translation = input;
 		console.log(input);
-		translator.translate();
+		translator.translateToWelsh();
 		return translation;
 	};
-	trans.translate = function() {
+	trans.translateToWelsh = function() {
 		var tempArray = [];
 		translation = translation.split(' ');
 		for (let x = 0; x < translation.length; x++) {
