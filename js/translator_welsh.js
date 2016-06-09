@@ -23,7 +23,7 @@ var translator = (function(trans) {
 	};
 
 	trans.getWelshTranslation = function(input) {
-		translation = input;
+		translation = translator.lint(input);
 		console.log(input);
 		translator.translateToWelsh();
 		return translation;
