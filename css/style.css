@@ -2,6 +2,33 @@
 	font-family: 'Edition', 'Linden Hill', serif;
 }
 
+.headerImg {
+	background-color: rgb(28, 28, 28);
+	height: 400px;
+}
+
+#main {
+	margin: auto;
+}
+
+#sayHello {
+	display: inline-block;
+	color: rgb(179, 0, 0);
+	font-size: 4rem;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+  }
+
 #button {
 	float: right;
 	margin: 5px 0;
@@ -30,10 +57,11 @@ body {
 	background-image: url("../img/fade1.png");
 	display: block;
 	font-size: 4rem;
-	color: red;
+	color: rgb(179, 0, 0);
 	border: 2px, solid, linear-gradient(red, black);
 }
 
 section {
 	margin: 10px 0;
+
 }
