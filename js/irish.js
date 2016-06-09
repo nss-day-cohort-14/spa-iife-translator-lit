@@ -23,7 +23,6 @@ var translator = (function(originalWord){
 		irishtrans = irishtrans.split(' ');
 		for (let i = 0; i < irishtrans.length; i++) {
 			for (var key in irishWords) {
-			// there's a problem with the line below
 			if (irishtrans[i] === key) words.push(irishWords[key]);
 			}
 		}

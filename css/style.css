@@ -14,3 +14,8 @@
 body {
 	/*background: linear-gradient(#f2f2f2, #262626);*/
 }
+
+#display {
+	height: 100%;
+	width: 50%;
+}
