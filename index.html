@@ -4,20 +4,30 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<div class="container">
+
 	<header><h1>Say Hello To My Little Translator</h1></header>
 	<article>
-		<textarea name="" id="input" cols="30" rows="10"></textarea>
-		<select name="language" id="language">
+		<section class="col-md-6">
+			
+		<textarea name="" id="input" cols="60" rows="9"></textarea>
+		<select name="language" id="language" class="form-control">
 			<option value="Welsh">Welsh</option>
 			<option value="Mandalorian">Mandalorian</option>
 			<option value="Irish">Irish</option>
 		</select>
-		<button id="button">Translate</button>
-		<section id="display"></section>
+		<button id="button" class="btn btn-danger btn btn-primary btn-lg btn-block">Translate</button>
+		</section>
+		<section id="display" class="col-md-6">
+			
+		</section>
 	</article>
+	</div>
+
 	<script src="js/translator.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/translator_welsh.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/irish.js" type="text/javascript" charset="utf-8" async defer></script>

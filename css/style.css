@@ -1,0 +1,16 @@
+#button {
+	float: right;
+	margin: 5px 0;
+
+}
+
+#language {
+	float: left;
+}
+
+#input {
+}
+
+body {
+	/*background: linear-gradient(#f2f2f2, #262626);*/
+}
