@@ -7,8 +7,8 @@ var translator = (function(originalWord){
 			"Say": "rá",
 			"hello to": "hello",
 			"my": "mo",
-			"little": "chara",
-			"friend": "beag"
+			"little": "beag",
+			"friend": "chara"
 			};
 
 	originalWord.getIrishTranslation = function(word){
