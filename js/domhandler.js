@@ -13,8 +13,9 @@ function translate() {
 		// elDisplay.innerHTML = translator.getIrishTranslation(translator.getInput());
 		elDisplay.innerHTML = `<p>${translator[language](translator.getInput())}</p>`;
 		var speech = translator[language](translator.getInput());
-		var msg = new SpeechSynthesisUtterance(speech);
-		window.speechSynthesis.speak(msg);
+		// var speechParam = ;
+		// window.speechSynthesis.speak(msg);
+		responsiveVoice.speak(speech, 'UK English Male');
 	}
 }
 

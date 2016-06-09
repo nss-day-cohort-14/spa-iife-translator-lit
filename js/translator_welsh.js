@@ -6,7 +6,7 @@ var translator = (function(trans) {
 		"hello": "helo",
 		"to": "i",
 		"my": "fy",
-		"little": "ychdig",
+		"little": "ychydig",
 		"friend": "ffrind",
 		"me": "mi",
 		"i": "yr",
