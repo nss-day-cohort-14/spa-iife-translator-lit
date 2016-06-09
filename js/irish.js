@@ -5,14 +5,16 @@ var translator = (function(originalWord){
 	// if there is no translation for to make it a blank value.
 	var irishWords = {
 			"say": "rá",
-			"hello": "hello",
+			"hello": "dia dhuit",
+			"to": "chun",
 			"my": "mo",
 			"little": "beag",
 			"friend": "chara"
 			};
 
 	originalWord.getIrishTranslation = function(word){
-		irishtrans = word;
+		irishtrans = translator.lint(word);
+		console.log('irishtrans', irishtrans)
 		translator.translateToIrish();
 		return irishtrans;
 	};

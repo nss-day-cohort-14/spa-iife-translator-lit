@@ -9,10 +9,10 @@
 }
 
 #input {
+	width: 100%;
 }
 
 body {
-	/*background: linear-gradient(#f2f2f2, #262626);*/
 }
 
 #display {
