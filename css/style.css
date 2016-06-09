@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'Edition', 'Linden Hill', serif;
+}
+
 #button {
 	float: right;
 	margin: 5px 0;
@@ -13,9 +17,13 @@
 }
 
 body {
+	font-family: 'Edition','Linden Hill', serif;
 }
 
 #display {
-	height: 100%;
-	width: 50%;
+	height: 283px;
+	width: 485px;
+	background-image: "../img/fade1.png"
+
 }
+
