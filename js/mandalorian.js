@@ -1,14 +1,15 @@
 var translator = (function(originalTranslator) {
 
-var translation;
-var lexicon = {
-	"say": "sirbur", 
-	"hello": "Su cuy'gar",
-	"to": "at",
-	"my": "ner",
-  "little": "ad'ika",
-	"friend": "burc'ya",
-}
+	var translation;
+	var lexicon = {
+		"say": "sirbur", 
+		"hello": "Su cuy'gar",
+		"to": "at",
+		"my": "ner",
+		"little": "ad'ika",
+		"friend": "burc'ya",
+	};
+
 	// create a function that the Dom Handler can call with input
 	originalTranslator.getMandalorianTranslation = function (input){
 		// separate input into serchable text	
@@ -23,10 +24,9 @@ var lexicon = {
 		}
 		return temp.join(" ");
 	}
-		return originalTranslator;
-		// loop over lexicon and if any words equate with input
-		  // pull the corresponding value
-		  // getMandalorianTranslation
+
+	return originalTranslator;
+
 })(translator);
 
 
