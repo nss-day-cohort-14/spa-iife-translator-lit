@@ -17,7 +17,7 @@ var translator = (function(trans) {
 		translator.translate();
 		return translation;
 	};
-	trans.translate = function() {
+	trans.translateToWelsh = function() {
 		var tempArray = [];
 		translation = translation.split(' ');
 		for (let x = 0; x < translation.length; x++) {
