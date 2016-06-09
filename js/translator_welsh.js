@@ -7,8 +7,19 @@ var translator = (function(trans) {
 		"to": "i",
 		"my": "fy",
 		"little": "ychdig",
-		"friend": "ffrind"
-
+		"friend": "ffrind",
+		"me": "mi",
+		"i": "yr",
+		"want": "eisiau",
+		"what's": "beth sy'n",
+		"coming": "dod",
+		"the": "y",
+		"world": "byd",
+		"and": "ac",
+		"everything": "popeth",
+		"in": "yn",
+		"it": "mae'n",
+		"chico": "bechgen"
 	};
 
 	trans.getWelshTranslation = function(input) {
