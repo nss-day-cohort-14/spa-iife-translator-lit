@@ -5,15 +5,18 @@
 #button {
 	float: right;
 	margin: 5px 0;
+	display: block;
 
 }
 
 #language {
 	float: left;
+	display: block;
 }
 
 #input {
 	width: 100%;
+	font-size: 3rem;
 }
 
 body {
@@ -23,7 +26,14 @@ body {
 #display {
 	height: 283px;
 	width: 485px;
-	background-image: "../img/fade1.png"
-
+	background-size: 100%;
+	background-image: url("../img/fade1.png");
+	display: block;
+	font-size: 4rem;
+	color: red;
+	border: 2px, solid, linear-gradient(red, black);
 }
 
+section {
+	margin: 10px 0;
+}
