@@ -12,7 +12,8 @@ var translator = (function(originalWord){
 			};
 
 	originalWord.getIrishTranslation = function(word){
-		irishtrans = word;
+		irishtrans = translator.lint(word);
+		console.log('irishtrans', irishtrans)
 		translator.translateToIrish();
 		return irishtrans;
 	};

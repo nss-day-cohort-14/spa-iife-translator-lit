@@ -14,7 +14,8 @@ var translator = (function(originalTranslator) {
 	originalTranslator.getMandalorianTranslation = function (input){
 		// separate input into serchable text	
 		var temp = [];
-		translation = input.split(" ");
+		translation = translator.lint(input);
+		translation = translation.split(' ');
 		for ( i = 0; i < translation.length; i++) {
 			for (var key in lexicon) {
 				if (translation[i] === key){
@@ -23,7 +24,7 @@ var translator = (function(originalTranslator) {
 			}
 		}
 		return temp.join(" ");
-	}
+	};
 
 	return originalTranslator;
 
