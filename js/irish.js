@@ -12,7 +12,7 @@ var translator = (function(originalWord){
 
 			};
 
-	originalWord.getTranslation = function(word){
+	originalWord.getIrishTranslation = function(word){
 		irishtrans = word;
 		translator.translate();
 		return irishtrans;
