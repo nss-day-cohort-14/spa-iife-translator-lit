@@ -21,13 +21,14 @@ var lexicon = {
 				}
 			}
 		}
-		console.log(temp.join(" "));
+		return temp.join(" ");
 	}
 		return originalTranslator;
 		// loop over lexicon and if any words equate with input
 		  // pull the corresponding value
 		  // getMandalorianTranslation
 })(translator);
+
 
 
 
