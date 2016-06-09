@@ -11,8 +11,9 @@ var translator = (function(trans) {
 
 	};
 
-	trans.getTranslation = function(input) {
+	trans.getWelshTranslation = function(input) {
 		translation = input;
+		console.log(input);
 		translator.translate();
 		return translation;
 	};
