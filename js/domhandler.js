@@ -11,7 +11,10 @@ function translate() {
 	if (isValid() === true) {
 		translator.setInput(elInput.value);
 		// elDisplay.innerHTML = translator.getIrishTranslation(translator.getInput());
-		elDisplay.innerHTML = translator[language](translator.getInput());
+		elDisplay.innerHTML = `<p>${translator[language](translator.getInput())}</p>`;
+		var speech = translator[language](translator.getInput());
+		var msg = new SpeechSynthesisUtterance(speech);
+		window.speechSynthesis.speak(msg);
 	}
 }
 

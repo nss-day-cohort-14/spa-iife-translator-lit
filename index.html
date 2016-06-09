@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Linden+Hill" />
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -12,27 +13,35 @@
 		<div class="headerImg">
 			<img id="main"src="../img/background.jpg" class="img-responsive" alt="Responsive image" class="container-fluid">
 			<div class="container-fluid">
-				<
-				 class="container-fluid" class="row">	
+				<div class="container-fluid" class="row">	
 					<div id="sayHello" class="container" class="col-xs-8 col-xs-offset-2"  >Say Hello To My Little Translator
 					</div>		
 				</div>
 			</div>
 	</header>
-	<article>
-		<textarea name="" id="input" cols="30" rows="10"></textarea>
-		<select name="language" id="language">
+	<article class="row">
+		<section class="col-xs-6">	
+		<textarea name="" id="input" cols="60" rows="5"></textarea>
+		<select name="language" id="language" class="form-control">
 			<option value="Welsh">Welsh</option>
 			<option value="Mandalorian">Mandalorian</option>
 			<option value="Irish">Irish</option>
 		</select>
-		<button id="button">Translate</button>
-		<section id="display"></section>
+		<button id="button" class="btn btn-danger btn btn-primary btn-lg btn-block">Translate</button>
+		</section>
+		<div class="row">
+		<section id="display" class="col-xs-6" class="container-fluid" src="../img/fade1.png" class="img-responsive">
+			
+		</section>
+		</div>
 	</article>
+	</div>
+
 	<script src="js/translator.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/translator_welsh.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/irish.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/mandalorian.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/translator_linter.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/domhandler.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

@@ -1,3 +1,7 @@
+@font-face {
+	font-family: 'Edition', 'Linden Hill', serif;
+}
+
 .headerImg {
 	background-color: rgb(28, 28, 28);
 	height: 400px;
@@ -15,7 +19,6 @@
 	text-align: center;
 }
 
-
 .row.no-gutters {
   margin-right: 0;
   margin-left: 0;
@@ -24,4 +27,41 @@
 .row.no-gutters > [class*=" col-"] {
   padding-right: 0;
   padding-left: 0;
+  }
+
+#button {
+	float: right;
+	margin: 5px 0;
+	display: block;
+
+}
+
+#language {
+	float: left;
+	display: block;
+}
+
+#input {
+	width: 100%;
+	font-size: 3rem;
+}
+
+body {
+	font-family: 'Edition','Linden Hill', serif;
+}
+
+#display {
+	height: 283px;
+	width: 485px;
+	background-size: 100%;
+	background-image: url("../img/fade1.png");
+	display: block;
+	font-size: 4rem;
+	color: rgb(179, 0, 0);
+	border: 2px, solid, linear-gradient(red, black);
+}
+
+section {
+	margin: 10px 0;
+
 }
