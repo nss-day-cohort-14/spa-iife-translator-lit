@@ -8,7 +8,8 @@ var translator = (function() {
 		},
 		setInput: function(arg) {
 			input = arg;
+			console.log(input);
 		}
-	}
+	};
 
 })();
